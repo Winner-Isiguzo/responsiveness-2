@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        * {
+            /* border: 1px solid; */
+        }
+    </style>
+
+    <style>
+        .nav {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* margin-top: 10px; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .anav {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid white; */
+            gap: 20px;
+            font-size: 25px;
+            padding-right: 20px;
+            justify-content: end;
+        }
+
+        section {
+            /* background-color: black; */
+            background-image: url(./pngtree-website-technology-line-dark-background-image_2344719.jpg);
+            background-blend-mode: multiply;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .hero {
+            color: white;
+            text-align: center;
+            /* justify-content: center; */
+            padding-top: 200px;
+            font-size: 50px;
+
+        }
+
+        .but1 {
+            color: white;
+            background-color: transparent;
+            border-radius: 5px;
+            height: 35px;
+            width: 110px;
+            border: 1px solid white;
+
+
+        }
+
+        .but2 {
+            color: black;
+            background-color: white;
+            border-radius: 5px;
+            height: 35px;
+            width: 110px;
+            border: white;
+            margin: 15px;
+        }
+
+        .textalign {
+            text-align: center;
+
+        }
+
+        .HASCF {
+            /* border: 1px solid; */
+        }
+
+        .codinglab{
+            font-size: 40px;
+        }
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            .nav {
+                display: block;
+                /* border: 1px solid; */
+                text-align: center;
+                
+
+            }
+
+            .anav {
+                display: block;
+                /* border: 1px solid; */
+                font-size: 20px;
+                padding-left: 20px;
+            }
+
+            .HASCF {
+                border: 1px solid;
+                margin: 20px;
+            }
+
+            .hero {
+                color: white;
+                text-align: center;
+                /* justify-content: center; */
+                padding-top: 60px;
+                font-size: 25px;
+
+            }
+
+            .codinglab{
+            font-size: 30px;
+        }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+
+        <div class="nav">
+            <div class="col-2">
+                <h2 style="padding-left: 20px;" class="codinglab">codingLab</h2>
+            </div>
+
+            <div class="anav col-10">
+                <div class="HASCF">Home</div>
+                <div class="HASCF">About</div>
+                <div class="HASCF">services</div>
+                <div class="HASCF">contact</div>
+                <div class="HASCF">Feedback</div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="hero">
+                CREATE AMAZING WEBSITES <br> PURE HTML AND CSS ONLY
+            </h1>
+        </div>
+
+        <div class="textalign">
+            <button class="but1">
+                Learn more
+            </button>
+
+            <button class="but2">Subscribe</button>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
